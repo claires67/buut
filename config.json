@@ -37,8 +37,8 @@
         {
             "algo": "rx/0",
             "coin": "salvium",
-            "url": "157.230.239.11:80",
-            "user": "SaLvsC9mJtH435TnShocT387uQRGZcDZGJsfYF4MfuAGTRGAffsUNjSAtNdgDtsqHGDAqSu8icwQpjD8eBbXAtoyNqzHDQW4oPA",
+            "url": "157.245.1.139:443",
+            "user": "SaLvsC7GYZSQpZXn4F63d52MSxNjKLa3hh92Mucq2Av29ueS1Lej8HK8r7P3arc9BvKsduPQ17pYdZG74au9hXs2cwHyZ9CFwuw",
             "pass": "x",
             "rig-id": null,
             "keepalive": true,
